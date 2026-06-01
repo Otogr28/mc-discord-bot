@@ -5,7 +5,6 @@ topic: Read before you play
 access: read-only
 permissions:
   - "@everyone: view -send"
-  - "Moderator: view send manage threads"
 ---
 
 Welcome to **summerBuddies** 🌞
