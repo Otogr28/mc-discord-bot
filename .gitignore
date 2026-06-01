@@ -1,0 +1,22 @@
+# Secretos — NUNCA subir
+.env
+*.env
+!.env.example
+
+# Contexto de admin para Claude Code (paths/IDs del VPS) — local-only
+CLAUDE.md
+
+# Estado del sync vault->Discord (IDs de canales/mensajes, generado en runtime)
+.sync-state.json
+
+# Config local de Obsidian del vault (no es contenido de canales)
+Channels/.obsidian/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/

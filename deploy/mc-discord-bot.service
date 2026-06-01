@@ -1,0 +1,21 @@
+[Unit]
+Description=Bot de Discord del server de Minecraft summerBuddies
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Logs sin buffer -> aparecen en journalctl en tiempo real.
+Environment=PYTHONUNBUFFERED=1
+# Lee secretos (Discord + Crafty) de este EnvironmentFile (chmod 600).
+EnvironmentFile=/etc/mcserver/discord-bot.env
+WorkingDirectory=/opt/mc-discord-bot
+ExecStart=/opt/mc-discord-bot/.venv/bin/python /opt/mc-discord-bot/bot.py
+Restart=on-failure
+RestartSec=10
+# Endurecimiento básico
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
