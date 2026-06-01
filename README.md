@@ -43,8 +43,13 @@ First message. An image URL auto-embeds: ![](https://i.imgur.com/x.png)
 
 ---
 
-Second message (another block).
+Second message. Paste an image in Obsidian and the bot uploads it:
+![[Pasted image 20260531.png]]
 ```
+
+**Imágenes:** pega una imagen en Obsidian (queda como `![[…png]]` en `Channels/Media/`) o
+usa `![](Media/foto.png)`: el bot **sube el archivo** como adjunto. Las URLs remotas se
+auto-embeben. El archivo de imagen viaja al VPS con `./deploy.sh` (git), antes del `/sync`.
 
 - **`permissions` es una LISTA de textos** `"Role: action action"`. Ese formato sí se edita
   en el panel de Properties de Obsidian (un objeto anidado `Rol: [..]` no se puede editar ahí).

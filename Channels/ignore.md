@@ -50,5 +50,12 @@ Es una **lista de textos**, un ítem por rol, con el formato `Rol: action action
 ## Cuerpo → mensajes
 
 El cuerpo (debajo del frontmatter) se parte en **bloques separados por una línea `---`**.
-Cada bloque es **un mensaje editable**. Una URL de imagen `![](url)` se auto-embebe.
-Borrar un bloque no borra el mensaje: lo deja en blanco.
+Cada bloque es **un mensaje editable**. Borrar un bloque no borra el mensaje: lo deja en blanco.
+
+## Imágenes
+
+- **Pegar una imagen en Obsidian** (Ctrl+V) crea un embed `![[Pasted image ….png]]` y guarda
+  el archivo en `Channels/Media/`. El bot **sube ese archivo** como adjunto al mensaje. ✅
+- También vale `![alt](Media/foto.png)` (archivo local del vault) → se sube como adjunto.
+- Una **URL remota** en markdown se deja en el texto y Discord la auto-embebe.
+- Recuerda hacer `./deploy.sh "…"` para que la imagen (archivo) llegue al VPS antes de `/sync`.
