@@ -17,8 +17,7 @@ This channel is read-only. Read everything before you connect.
 1. No griefing or stealing from other players.
 2. Be respectful in chat and voice.
 3. No cheats or modified clients.
-4. Have fun and build cool stuff.
+4. Have fun riding dragons!.
 
 ---
 
-Questions? Ask a **Moderator**.
