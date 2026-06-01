@@ -83,16 +83,22 @@ python bot.py
 
 ## 3. Desplegar en el VPS
 
-El bot corre como servicio systemd en `/opt/mc-discord-bot`, junto a Crafty.
+El bot corre como servicio systemd en `/opt/mc-discord-bot`, junto a Crafty. El código
+se mueve **por git** (la laptop hace `git push`, el VPS hace `git pull`), no por rsync.
+El VPS clona el repo privado con una **deploy key de solo-lectura**.
 
 ```bash
-# --- en la laptop: copiar el código al VPS ---
-rsync -av --delete --exclude='.venv' --exclude='.env' --exclude='.git' \
-  --exclude='.sync-state.json' --exclude='Channels/.obsidian' \
-  ./ mcserver:/opt/mc-discord-bot/
-
-# --- en el VPS (ssh mcserver) ---
+# --- en el VPS (ssh mcserver): clonar con la deploy key ---
+# 1) Generar la deploy key y registrarla en el repo (read-only) una sola vez:
+ssh-keygen -t ed25519 -N '' -f /root/.ssh/mc-discord-bot-deploy
+#    -> añade /root/.ssh/mc-discord-bot-deploy.pub como Deploy Key (read-only) en GitHub.
+# 2) Clonar usando esa clave:
+GIT_SSH_COMMAND='ssh -i /root/.ssh/mc-discord-bot-deploy -o IdentitiesOnly=yes' \
+  git clone git@github.com:Otogr28/mc-discord-bot.git /opt/mc-discord-bot
 cd /opt/mc-discord-bot
+git config core.sshCommand 'ssh -i /root/.ssh/mc-discord-bot-deploy -o IdentitiesOnly=yes'
+
+# 3) venv + dependencias.
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
@@ -116,6 +122,17 @@ systemctl daemon-reload
 systemctl enable --now mc-discord-bot
 systemctl status mc-discord-bot
 journalctl -u mc-discord-bot -f      # ver logs en vivo
+```
+
+### Re-desplegar tras editar el código
+
+```bash
+# laptop: subir cambios
+git add -A && git commit -m "..." && git push
+# VPS: jalar y reiniciar
+ssh mcserver 'cd /opt/mc-discord-bot && git pull'
+# si cambió requirements: ssh mcserver '/opt/mc-discord-bot/.venv/bin/pip install -r /opt/mc-discord-bot/requirements.txt'
+ssh mcserver systemctl restart mc-discord-bot
 ```
 
 ## Configuración (variables de entorno)
