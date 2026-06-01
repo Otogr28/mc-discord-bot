@@ -24,6 +24,7 @@ class ChannelDoc:
     topic: str | None = None                   # topic del canal
     access: str | None = None                  # preset de permisos
     permissions: dict[str, list[str]] = field(default_factory=dict)
+    ignore: bool = False                       # frontmatter `ignore: true` -> no sincronizar
     key: str = ""                              # clave de estado (stem del archivo)
 
 
@@ -115,18 +116,30 @@ def parse_doc(path: Path) -> ChannelDoc:
         topic=str(topic) if topic else None,
         access=str(access) if access else None,
         permissions=_normalize_permissions(meta.get("permissions")),
+        ignore=bool(meta.get("ignore", False)),
         key=path.stem,
     )
 
 
 def load_docs(channels_dir: str | Path) -> list[ChannelDoc]:
-    """Lee todos los `.md` del vault (ignora `.obsidian/` y ocultos)."""
+    """Lee los `.md` del vault que SÍ son canales.
+
+    Se ignoran: `.obsidian/` y ocultos, archivos cuyo nombre empieza con `_`
+    (convención para notas que no son canales) y los que traen `ignore: true`
+    en el frontmatter.
+    """
     root = Path(channels_dir)
     if not root.is_dir():
         return []
     docs: list[ChannelDoc] = []
     for path in sorted(root.rglob("*.md")):
-        if any(part.startswith(".") for part in path.relative_to(root).parts):
+        rel = path.relative_to(root)
+        if any(part.startswith(".") for part in rel.parts):
             continue  # .obsidian/, themes, etc.
-        docs.append(parse_doc(path))
+        if path.stem.startswith("_"):
+            continue  # nota auxiliar, no es un canal
+        doc = parse_doc(path)
+        if doc.ignore:
+            continue  # frontmatter: ignore: true
+        docs.append(doc)
     return docs

@@ -53,7 +53,20 @@ Second message (another block).
   `history`, `manage`, `mention`. Prefijo `-` = denegar (`-send`); sin prefijo = permitir;
   ausente = heredar.
 - **Roles** se resuelven por nombre; `@everyone` = todos. Rol inexistente → aviso, no rompe.
+- **Ignorar un `.md`** (que no sea canal, ej. notas/chuletas): ponle `ignore: true` en el
+  frontmatter, o nómbralo con `_` al inicio (`_borrador.md`). Ver `Channels/ignore.md`.
 - `/sync` es **solo para administradores**. El bot **nunca borra** canales ni mensajes.
+
+### Flujo para sincronizar
+
+1. Edita los `.md` en `Channels/` (desde Obsidian o tu editor).
+2. Sube los cambios al VPS:  `./deploy.sh "lo que cambié"`
+   (hace `git push` y el VPS hace `git pull`; con `--restart` reinicia el bot si tocaste código).
+3. En Discord, corre **`/sync`** para que el bot aplique los cambios a los canales.
+
+> Ojo: hay dos "syncs" distintos. `deploy.sh` lleva los **archivos** al VPS (git);
+> `/sync` en Discord aplica esos archivos a los **canales**. Editar Obsidian no toca
+> Discord hasta que haces ambos.
 
 > El bot necesita los permisos **Gestionar canales** y **Gestionar roles**. Si
 > invitaste el bot antes de tener `/sync`, re-invítalo con el link de abajo y
