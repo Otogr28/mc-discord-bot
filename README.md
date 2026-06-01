@@ -25,28 +25,33 @@ Cada archivo `.md` en `Channels/` describe un canal de Discord. El **frontmatter
 bloques por líneas `---`, se publica como mensajes que el bot **mantiene editados**
 (no reenvía). Un bloque que borras no elimina el mensaje: lo deja en blanco.
 
+> ⚠️ El vocabulario del frontmatter (presets y acciones) está **en inglés**. Los nombres
+> de rol son los reales de tu Discord (esos van como los tengas, ej. `Moderador`).
+
 ```markdown
 ---
-channel: reglas              # nombre del canal (si falta, usa el del archivo)
-category: información         # categoría (se crea si no existe)
-topic: Lee antes de jugar     # topic del canal
-access: solo-lectura          # preset de permisos
-permissions:                  # overrides finos rol -> acciones
-  "@everyone": [ver, -escribir]
-  Moderador: [ver, escribir, gestionar, hilos]
+channel: rules               # nombre del canal (si falta, usa el del archivo)
+category: information         # categoría (se crea si no existe)
+topic: Read before you play   # topic del canal
+access: read-only             # preset de permisos
+permissions:                  # lista editable en Properties de Obsidian
+  - "@everyone: view -send"
+  - "Moderator: view send manage threads"
 ---
 
-Primer mensaje. Una URL de imagen se auto-embebe: ![](https://i.imgur.com/x.png)
+First message. An image URL auto-embeds: ![](https://i.imgur.com/x.png)
 
 ---
 
-Segundo mensaje (otro bloque).
+Second message (another block).
 ```
 
-- **Presets** (`access:`): `publico`, `solo-lectura`, `staff`, `oculto`.
-- **Acciones** (en `permissions:`): `ver`, `escribir`, `hilos`, `reacciones`,
-  `adjuntar`, `enlaces`, `historial`, `gestionar`, `mencionar`.
-  Prefijo `-` = denegar (`-escribir`); sin prefijo = permitir; ausente = heredar.
+- **`permissions` es una LISTA de textos** `"Role: action action"`. Ese formato sí se edita
+  en el panel de Properties de Obsidian (un objeto anidado `Rol: [..]` no se puede editar ahí).
+- **Presets** (`access:`): `public`, `read-only`, `staff`, `hidden`.
+- **Acciones** (en cada ítem): `view`, `send`, `threads`, `reactions`, `attach`, `links`,
+  `history`, `manage`, `mention`. Prefijo `-` = denegar (`-send`); sin prefijo = permitir;
+  ausente = heredar.
 - **Roles** se resuelven por nombre; `@everyone` = todos. Rol inexistente → aviso, no rompe.
 - `/sync` es **solo para administradores**. El bot **nunca borra** canales ni mensajes.
 

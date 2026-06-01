@@ -1,14 +1,14 @@
 """Lenguaje de permisos del frontmatter -> overwrites de Discord.
 
 Cada `.md` puede declarar un **preset** (`access:`) que siembra los permisos
-base, y un bloque `permissions:` con overrides finos por rol:
+base, y un `permissions:` (lista de textos) con overrides finos por rol:
 
-    access: solo-lectura
+    access: read-only
     permissions:
-      "@everyone": [ver, -escribir]
-      Moderador: [ver, escribir, gestionar, hilos]
+      - "@everyone: view -send"
+      - "Moderator: view send manage threads"
 
-Donde `accion` = permitir, `-accion` = denegar, y lo ausente se hereda.
+Donde `action` = permitir, `-action` = denegar, y lo ausente se hereda.
 """
 
 from __future__ import annotations
@@ -19,26 +19,26 @@ import discord
 
 log = logging.getLogger("mc-discord-bot")
 
-# Acción (en español, del frontmatter) -> campo(s) de discord.PermissionOverwrite.
+# Acción (en inglés, del frontmatter) -> campo(s) de discord.PermissionOverwrite.
 ACTIONS: dict[str, tuple[str, ...]] = {
-    "ver": ("view_channel",),
-    "escribir": ("send_messages",),
-    "hilos": ("create_public_threads", "send_messages_in_threads"),
-    "reacciones": ("add_reactions",),
-    "adjuntar": ("attach_files",),
-    "enlaces": ("embed_links",),
-    "historial": ("read_message_history",),
-    "gestionar": ("manage_messages",),
-    "mencionar": ("mention_everyone",),
+    "view": ("view_channel",),
+    "send": ("send_messages",),
+    "threads": ("create_public_threads", "send_messages_in_threads"),
+    "reactions": ("add_reactions",),
+    "attach": ("attach_files",),
+    "links": ("embed_links",),
+    "history": ("read_message_history",),
+    "manage": ("manage_messages",),
+    "mention": ("mention_everyone",),
 }
 
 # Presets -> permisos para @everyone (allow/deny por acción).
 # True = permitir, False = denegar.
 PRESETS: dict[str, dict[str, bool]] = {
-    "publico": {"ver": True, "escribir": True},
-    "solo-lectura": {"ver": True, "escribir": False},
-    "staff": {"ver": False},
-    "oculto": {"ver": False},
+    "public": {"view": True, "send": True},
+    "read-only": {"view": True, "send": False},
+    "staff": {"view": False},
+    "hidden": {"view": False},
 }
 
 

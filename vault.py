@@ -7,6 +7,7 @@ bloques separados por una línea `---`; cada bloque será un mensaje editable.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -64,19 +65,39 @@ def _split_blocks(body: str) -> list[str]:
     return blocks
 
 
+def _coerce_actions(actions) -> list[str]:
+    """Una lista de acciones puede venir como string ('view -send') o lista."""
+    if isinstance(actions, str):
+        return [a for a in re.split(r"[,\s]+", actions.strip()) if a]
+    if isinstance(actions, (list, tuple)):
+        return [str(a).strip() for a in actions if str(a).strip()]
+    return []
+
+
 def _normalize_permissions(raw) -> dict[str, list[str]]:
-    """`permissions:` viene como {rol: [accion, ...]}; normaliza a ese shape."""
-    if not isinstance(raw, dict):
-        return {}
+    """Normaliza `permissions` a `{role: [actions]}`.
+
+    Forma recomendada (editable en las Properties de Obsidian): una **lista de
+    textos** `"Role: action action"`:
+
+        permissions:
+          - "@everyone: view -send"
+          - "Moderator: view send manage"
+
+    También se acepta la forma anidada `{Role: [actions]}` por compatibilidad.
+    """
     out: dict[str, list[str]] = {}
-    for role, actions in raw.items():
-        if isinstance(actions, str):
-            actions = [a.strip() for a in actions.split(",") if a.strip()]
-        elif isinstance(actions, (list, tuple)):
-            actions = [str(a).strip() for a in actions]
-        else:
-            actions = []
-        out[str(role)] = actions
+    if isinstance(raw, dict):
+        for role, actions in raw.items():
+            out[str(role)] = _coerce_actions(actions)
+    elif isinstance(raw, (list, tuple)):
+        for item in raw:
+            if not isinstance(item, str) or ":" not in item:
+                continue
+            role, _, actions_str = item.partition(":")
+            role = role.strip()
+            if role:
+                out[role] = _coerce_actions(actions_str)
     return out
 
 

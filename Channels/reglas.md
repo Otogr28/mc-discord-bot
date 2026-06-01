@@ -1,26 +1,25 @@
 ---
-channel: reglas
-category: información
-topic: Lee antes de jugar
-access: solo-lectura
+channel: rules
+category: information
+topic: Read before you play
+access: read-only
 permissions:
-  "@everyone": [ver, -escribir]
-  Moderador: [ver, escribir, gestionar, hilos]
+  - "@everyone: view -send"
+  - "Moderator: view send manage threads"
 ---
 
-Bienvenido al server **summerBuddies** 🌞
+Welcome to **summerBuddies** 🌞
 
-Este canal es de solo lectura. Lee todo antes de conectarte.
-
----
-
-## Reglas
-
-1. Nada de griefing ni robar a otros jugadores.
-2. Respeto en el chat y en voz.
-3. Nada de cheats ni clientes modificados.
-4. Diviértete y construye cosas geniales.
+This channel is read-only. Read everything before you connect.
 
 ---
 
-¿Dudas? Pregunta a un **Moderador**.
+## Rules
+1. No griefing or stealing from other players.
+2. Be respectful in chat and voice.
+3. No cheats or modified clients.
+4. Have fun and build cool stuff.
+
+---
+
+Questions? Ask a **Moderator**.
