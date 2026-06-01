@@ -21,4 +21,4 @@ Welcome to **summerBuddies** 🌞
 ![[Pasted image 20260531215920.png]]
 ---
 
-test
+Hi Jae chang
