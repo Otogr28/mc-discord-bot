@@ -18,6 +18,6 @@ This channel is read-only. Read everything before you connect.
 2. Be respectful in chat and voice.
 3. No cheats or modified clients.
 4. Have fun riding dragons!.
-
+![[Pasted image 20260531215920.png]]
 ---
 
