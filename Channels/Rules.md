@@ -9,7 +9,7 @@ permissions:
 
 Welcome to **summerBuddies** 🌞
 
-This channel is read-only. Read everything before you connect.
+
 
 ---
 
@@ -21,3 +21,4 @@ This channel is read-only. Read everything before you connect.
 ![[Pasted image 20260531215920.png]]
 ---
 
+test
