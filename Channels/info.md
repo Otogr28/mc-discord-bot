@@ -1,7 +1,7 @@
 ---
 channel: info
 category: information
-topic: The Hub — read it before a Gate eats you
+topic: The Hub. Read it before a Gate unmakes you.
 access: read-only
 permissions:
   - "@everyone: view -send"
@@ -9,13 +9,13 @@ permissions:
 
 #  Realm Gates
 
-You're new. I can tell. New ones always wander in here looking for someone to hold their hand.
+Another traveler. They keep stumbling through, wide-eyed, looking for someone to walk them by the hand.
 
-That's not me.
+Look somewhere else.
 
-The realms are old, stitched together by Gates older still. Step through the wrong one and you don't come back the same — if you come back at all. There's a rot out there called the Blight. It doesn't kill the realms. It *unmakes* them. The first one it took is the Red Waste now: a flat, cracked stretch of red where a whole world used to be. That's what's waiting if you're careless.
+The realms are old. The Gates that stitch them together are older, and they don't care whether you're ready. Pick the wrong one and you come back wrong, or you don't come back. There's a rot loose between the realms. The Blight. It doesn't burn a world down — it *unwrites* it, edge first, until there's nothing left to stand on. The first realm it took is the Red Waste now. Flat red ground, cracked all the way to the horizon, where a whole world used to breathe. Stare at it long enough and you'll understand the stakes.
 
-Everything a traveler needs to stay breathing — the mods, the realms, the Gates, what the Blight is doing out there — it's all written down in one place. The **Hub**. Read it before you take a single step.
+I'm not going to explain this twice. Everything you'd ask me — the mods, the realms, which Gates open and what they cost, what the Blight is doing right now — somebody already wrote it all down in one place. The **Hub**. Read it before you take a single step.
 
 ![[ChatGPT Image Jun 7, 2026, 06_23_19 PM.png|697]]
 
@@ -23,10 +23,10 @@ Everything a traveler needs to stay breathing — the mods, the realms, the Gate
 
 ## The Hub
 
-This is the only thing in this channel that matters:
+One link. The only thing in this channel worth your time.
 
-👉 **https://otogr28.github.io/realm-gates/**
+https://otogr28.github.io/realm-gates/
 
-Every realm. Every Gate. Every mod, every mechanic, every scrap of lore I bothered to record. It's all in the Hub. Whatever you're about to ask — it's answered there already.
+Every realm. Every Gate. Every mod, every mechanic, every scrap of lore worth keeping. It's in the Hub. Whatever you were about to type into chat is already answered there.
 
-So don't bring it to chat. Read the Hub, gear up, and go. The Gates won't wait for you, and neither will I.
+So don't bring it to me. Read it, gear up, walk through. The Gates don't wait. Neither do I.
