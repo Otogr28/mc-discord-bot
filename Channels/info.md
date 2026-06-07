@@ -7,7 +7,7 @@ permissions:
   - "@everyone: view -send"
 ---
 
-# 🌍 Realm Gates
+#  Realm Gates
 
 You're new. I can tell. New ones always wander in here looking for someone to hold their hand.
 
@@ -17,11 +17,11 @@ The realms are old, stitched together by Gates older still. Step through the wro
 
 Everything a traveler needs to stay breathing — the mods, the realms, the Gates, what the Blight is doing out there — it's all written down in one place. The **Hub**. Read it before you take a single step.
 
-![[Pasted image 20260531215920.png]]
+![[ChatGPT Image Jun 7, 2026, 06_23_19 PM.png|697]]
 
 ---
 
-## 📡 The Hub
+## The Hub
 
 This is the only thing in this channel that matters:
 
