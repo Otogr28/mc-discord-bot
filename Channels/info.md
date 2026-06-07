@@ -7,7 +7,7 @@ permissions:
   - "@everyone: view -send"
 ---
 
-# 🌍 Realm Gates
+# Realm Gates
 
 Welcome, traveler. This is **Realm Gates** — a cluster of worlds bound together by ancient **Gates**. Step through one and you cross from realm to realm, each with its own skies, its own dangers, and its own secrets waiting to be dug up.
 
@@ -30,6 +30,8 @@ You are a **traveler**. Pick a Gate. See where it leads. Just don't let anything
 ---
 
 ## ℹ️ General info
+
+📚 **All the modpack info and wiki is here!** → https://otogr28.github.io/realm-gates/
 
 - **Edition:** Minecraft Java — Forge 1.20.1
 - **Travel** between realms through the Gates. Some realms are far harsher than others, so gear up before you step through.
