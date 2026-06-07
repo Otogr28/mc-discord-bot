@@ -7,17 +7,18 @@ permissions:
   - "@everyone: view -send"
 ---
 
-Welcome to **summerBuddies** 🌞
+Welcome to **Realm Gates** 🌀
+Step through the gate, traveler — the realms await.
 
 
 
 ---
 
 ## Rules
-1. No griefing or stealing from other players.
+1. No griefing or stealing from other travelers.
 2. Be respectful in chat and voice.
 3. No cheats or modified clients.
-4. Have fun riding dragons!.
+4. Have fun exploring the realms!
 ![[Pasted image 20260531215920.png]]
 ---
 
