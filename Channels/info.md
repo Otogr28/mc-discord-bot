@@ -9,11 +9,13 @@ permissions:
 
 #  Realm Gates
 
-Another traveler. You always come in the same way — wide-eyed, looking for a hand to hold. Mine's busy.
+Another traveler. You all come in the same way — wide-eyed, looking for a hand to hold. Mine's busy.
 
-The realms are old. The Gates that stitch them together are older, and they don't care whether you're ready. Walk through the wrong one and you come back wrong. Or you don't come back.
+The worlds are old. The Gates that stitch them together are older, and they don't care whether you're ready. Walk through the wrong one and you come back wrong. Or you don't come back.
 
-There's a rot loose between the worlds. We call it the Blight. It doesn't kill a realm. It unwrites one — peels it apart at the edges until there's nothing left to stand on. The first one it took is the Red Waste now. A flat red plain, cracked all the way down. There was a whole world there once. Ask anyone who was.
+Something is unpainting the worlds. I've watched it happen. The color goes first, then the edges, and the ground forgets it was ever there. I'm not going to tell you what it is. I'm not sure anyone knows. I only know it's faster than you are.
+
+So move. The brush is already on the canvas.
 
 ![[ChatGPT Image Jun 7, 2026, 06_23_19 PM.png|697]]
 
