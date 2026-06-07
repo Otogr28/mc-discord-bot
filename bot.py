@@ -40,10 +40,10 @@ def build_status_embed(cfg: Config, status: ServerStatus) -> discord.Embed:
             title=f"🟢 {cfg.server_name} — Online",
             color=COLOR_UP,
         )
-        jugadores = ", ".join(status.players) if status.players else "nadie conectado"
+        players = ", ".join(status.players) if status.players else "nobody online"
         embed.add_field(
-            name="Jugadores",
-            value=f"**{status.online}/{status.max_players}** — {jugadores}",
+            name="Players",
+            value=f"**{status.online}/{status.max_players}** — {players}",
             inline=False,
         )
         embed.add_field(name="CPU", value=f"{status.cpu:.1f}%", inline=True)
@@ -52,13 +52,13 @@ def build_status_embed(cfg: Config, status: ServerStatus) -> discord.Embed:
             value=f"{status.mem} ({status.mem_percent:.0f}%)",
             inline=True,
         )
-        embed.add_field(name="Mundo", value=status.world_size, inline=True)
+        embed.add_field(name="World", value=status.world_size, inline=True)
         if status.version != "—":
-            embed.add_field(name="Versión", value=status.version, inline=True)
+            embed.add_field(name="Version", value=status.version, inline=True)
     else:
         embed = discord.Embed(
             title=f"🔴 {cfg.server_name} — Offline",
-            description="El server no está corriendo ahora mismo.",
+            description="The server isn't running right now.",
             color=COLOR_DOWN,
         )
 
@@ -73,36 +73,36 @@ def build_sync_embed(report: SyncReport) -> discord.Embed:
         color = COLOR_UP
     else:
         color = COLOR_ERROR
-    embed = discord.Embed(title="🔄 Sincronización del vault", color=color)
+    embed = discord.Embed(title="🔄 Vault sync", color=color)
 
-    canales = []
+    channels = []
     if report.channels_created:
-        canales.append(f"creados: {', '.join('#' + c for c in report.channels_created)}")
+        channels.append(f"created: {', '.join('#' + c for c in report.channels_created)}")
     if report.channels_updated:
-        canales.append(f"actualizados: {', '.join('#' + c for c in report.channels_updated)}")
+        channels.append(f"updated: {', '.join('#' + c for c in report.channels_updated)}")
     embed.add_field(
-        name="Canales",
-        value="\n".join(canales) if canales else "ninguno",
+        name="Channels",
+        value="\n".join(channels) if channels else "none",
         inline=False,
     )
     embed.add_field(
-        name="Mensajes",
+        name="Messages",
         value=(
-            f"enviados: {report.messages_sent} · "
-            f"editados: {report.messages_edited} · "
-            f"blanqueados: {report.messages_blanked}"
+            f"sent: {report.messages_sent} · "
+            f"edited: {report.messages_edited} · "
+            f"blanked: {report.messages_blanked}"
         ),
         inline=False,
     )
     if report.missing_roles:
         embed.add_field(
-            name="⚠️ Roles no encontrados",
+            name="⚠️ Roles not found",
             value=", ".join(sorted(report.missing_roles)),
             inline=False,
         )
     if report.errors:
         embed.add_field(
-            name="❌ Errores",
+            name="❌ Errors",
             value="\n".join(report.errors)[:1024],
             inline=False,
         )
@@ -153,7 +153,7 @@ class MCBot(discord.Client):
             log.warning("No pude leer estado para la presencia: %s", exc)
             await self.change_presence(
                 status=discord.Status.idle,
-                activity=discord.Game(name="estado desconocido"),
+                activity=discord.Game(name="status unknown"),
             )
             return
 
@@ -162,7 +162,7 @@ class MCBot(discord.Client):
                 status=discord.Status.online,
                 activity=discord.Activity(
                     type=discord.ActivityType.watching,
-                    name=f"{status.online}/{status.max_players} jugadores",
+                    name=f"{status.online}/{status.max_players} players",
                 ),
             )
         else:
@@ -180,16 +180,16 @@ def main() -> None:
     cfg = Config.from_env()
     client = MCBot(cfg)
 
-    @client.tree.command(name="estado", description="Muestra el estado del server de Minecraft")
-    async def estado(interaction: discord.Interaction) -> None:
+    @client.tree.command(name="status", description="Show the Minecraft server status")
+    async def status_cmd(interaction: discord.Interaction) -> None:
         await interaction.response.defer(thinking=True)
         try:
             status = await client.crafty.get_status()
         except Exception as exc:  # noqa: BLE001
             log.error("Error consultando Crafty: %s", exc)
             embed = discord.Embed(
-                title="⚠️ No pude consultar el server",
-                description="La API de Crafty no respondió. Intenta de nuevo en un momento.",
+                title="⚠️ Couldn't reach the server",
+                description="The Crafty API didn't respond. Try again in a moment.",
                 color=COLOR_ERROR,
             )
             await interaction.followup.send(embed=embed)
@@ -198,14 +198,14 @@ def main() -> None:
 
     @client.tree.command(
         name="sync",
-        description="Sincroniza los canales/mensajes desde el vault de Obsidian",
+        description="Sync channels/messages from the Obsidian vault",
     )
     async def sync(interaction: discord.Interaction) -> None:
         # Solo administradores: crea/edita canales, mensajes y permisos.
         perms = getattr(interaction.user, "guild_permissions", None)
         if interaction.guild is None or perms is None or not perms.administrator:
             await interaction.response.send_message(
-                "Solo un administrador puede usar /sync.", ephemeral=True
+                "Only an administrator can use /sync.", ephemeral=True
             )
             return
         await interaction.response.defer(thinking=True)
@@ -216,7 +216,7 @@ def main() -> None:
         except Exception as exc:  # noqa: BLE001
             log.error("Error en /sync: %s", exc)
             embed = discord.Embed(
-                title="⚠️ Falló la sincronización",
+                title="⚠️ Sync failed",
                 description=str(exc)[:2000],
                 color=COLOR_ERROR,
             )
