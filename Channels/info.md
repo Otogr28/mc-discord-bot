@@ -1,7 +1,7 @@
 ---
 channel: info
 category: information
-topic: The Hub. Read it before a Gate unmakes you.
+topic: One link. Read the Hub before a Gate unmakes you.
 access: read-only
 permissions:
   - "@everyone: view -send"
@@ -9,13 +9,11 @@ permissions:
 
 #  Realm Gates
 
-Another traveler. They keep stumbling through, wide-eyed, looking for someone to walk them by the hand.
+Another traveler. You always come in the same way — wide-eyed, looking for a hand to hold. Mine's busy.
 
-Look somewhere else.
+The realms are old. The Gates that stitch them together are older, and they don't care whether you're ready. Walk through the wrong one and you come back wrong. Or you don't come back.
 
-The realms are old. The Gates that stitch them together are older, and they don't care whether you're ready. Pick the wrong one and you come back wrong, or you don't come back. There's a rot loose between the realms. The Blight. It doesn't burn a world down — it *unwrites* it, edge first, until there's nothing left to stand on. The first realm it took is the Red Waste now. Flat red ground, cracked all the way to the horizon, where a whole world used to breathe. Stare at it long enough and you'll understand the stakes.
-
-I'm not going to explain this twice. Everything you'd ask me — the mods, the realms, which Gates open and what they cost, what the Blight is doing right now — somebody already wrote it all down in one place. The **Hub**. Read it before you take a single step.
+There's a rot loose between the worlds. We call it the Blight. It doesn't kill a realm. It unwrites one — peels it apart at the edges until there's nothing left to stand on. The first one it took is the Red Waste now. A flat red plain, cracked all the way down. There was a whole world there once. Ask anyone who was.
 
 ![[ChatGPT Image Jun 7, 2026, 06_23_19 PM.png|697]]
 
@@ -27,6 +25,6 @@ One link. The only thing in this channel worth your time.
 
 https://otogr28.github.io/realm-gates/
 
-Every realm. Every Gate. Every mod, every mechanic, every scrap of lore worth keeping. It's in the Hub. Whatever you were about to type into chat is already answered there.
+Every realm. Every Gate. Every mod, every mechanic, every scrap of lore worth keeping — it's in the Hub. Whatever you were about to type into chat is already written there.
 
 So don't bring it to me. Read it, gear up, walk through. The Gates don't wait. Neither do I.
