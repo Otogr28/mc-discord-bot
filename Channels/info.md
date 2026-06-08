@@ -13,9 +13,9 @@ Another traveler. You all come in the same way — wide-eyed, looking for a hand
 
 The worlds are old. The Gates that stitch them together are older, and they don't care whether you're ready. Walk through the wrong one and you come back wrong. Or you don't come back.
 
-Something is unpainting the worlds. I've watched it happen. The color goes first, then the edges, and the ground forgets it was ever there. I'm not going to tell you what it is. I'm not sure anyone knows. I only know it's faster than you are.
+Something is unpainting the worlds. I've watched it happen. The color goes first, then the edges, and the ground forgets it was ever there. 
 
-So move. The brush is already on the canvas.
+So start moving. The brush is already on the canvas.
 
 ![[ChatGPT Image Jun 7, 2026, 06_23_19 PM.png|697]]
 

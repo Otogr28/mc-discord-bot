@@ -9,4 +9,4 @@ permissions:
 
 @everyone
 
-The server is still in development — the website too. I'm aiming to have it ready by next week. I work on this in my free time, so thanks for your patience. 🌀
+The server is still in development — the website too. I'm aiming to have it ready by next week. I work on this in my free time, so thanks for your patience. 
