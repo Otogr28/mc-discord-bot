@@ -37,3 +37,13 @@ The **Realm Gates** server officially launches **tomorrow at 6:30 PM EDT**. Gath
 🇪🇸 Spain — **12:30 AM** (next day)
 
 See you at the Gates.
+
+---
+
+<@&1515788221823324391>
+
+**The Gates open in 2 hours!**
+
+The **Realm Gates** server goes live today at **6:30 PM EDT** — <t:1782253800:R>. Last preparations are underway. Gather your friends, ready your gear, and meet us at the Gates.
+
+See you at the Gates.
