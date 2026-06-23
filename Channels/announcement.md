@@ -25,7 +25,7 @@ We're aiming to have the server **finished this Monday** — keep an eye on this
 
 **The Gates open tomorrow!**
 
-The **summerBuddies** server officially launches **tomorrow at 6:30 PM EDT**. Gather your friends, ready your gear, and meet us at the Gates.
+The **Realm Gates** server officially launches **tomorrow at 6:30 PM EDT**. Gather your friends, ready your gear, and meet us at the Gates.
 
 **In your local time:** <t:1782253800:F> — <t:1782253800:R>
 
