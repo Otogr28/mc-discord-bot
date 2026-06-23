@@ -47,3 +47,17 @@ See you at the Gates.
 The **Realm Gates** server goes live today at **6:30 PM EDT** — <t:1782253800:R>. Last preparations are underway. Gather your friends, ready your gear, and meet us at the Gates.
 
 See you at the Gates.
+
+---
+
+<@&1515788221823324391>
+
+**We're opening in beta.**
+
+The Gates are open, but keep in mind the server is still in **beta**. Don't be alarmed if you run into errors or bugs along the way — it's expected at this stage, and nothing's broken on your end.
+
+If you hit something that looks off, please report it in <#1518887443447808031>. Every report genuinely helps me fix things faster.
+
+I'll keep developing the server every night, during hours when no one's online, so expect changes and updates **daily**. The world will keep growing under your feet.
+
+Thanks for being here from the start. See you at the Gates.
