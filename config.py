@@ -46,7 +46,7 @@ class Config:
             guild_id=int(guild) if guild else None,
             refresh_seconds=int(os.environ.get("STATUS_REFRESH_SECONDS", "60")),
             server_name=os.environ.get("MC_SERVER_NAME", "Realm Gates"),
-            server_address=os.environ.get("MC_SERVER_ADDRESS", "5.78.204.157"),
+            server_address=os.environ.get("MC_SERVER_ADDRESS", "5.161.52.222"),
             channels_dir=os.environ.get("CHANNELS_DIR", "Channels"),
             state_file=os.environ.get("SYNC_STATE_FILE", ".sync-state.json"),
         )
