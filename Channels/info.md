@@ -27,6 +27,3 @@ One link. The only thing in this channel worth your time.
 
 https://otogr28.github.io/realm-gates/
 
-Every realm. Every Gate. Every mod, every mechanic, every scrap of lore worth keeping — it's in the Hub. Whatever you were about to type into chat is already written there.
-
-So don't bring it to me. Read it, gear up, walk through. The Gates don't wait. Neither do I.

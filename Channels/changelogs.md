@@ -6,7 +6,7 @@ access: read-only
 permissions:
   - "@everyone: view -send"
 ---
-
+<@&1515788221823324391>
 **Changelog — June 24, 2026**
 
 **New mods**
@@ -14,12 +14,13 @@ permissions:
 - **Tom's Storage** — all your chests in one searchable terminal.
 
 **Companions**
-- **Golden apple (right-click) heals them** — Regen II, Absorption I, +1 heart.
+- ** Now Companions can be healed. Golden apple (right-click) heals them** — Regen II, Absorption I, +1 heart.
 - **Respawn now 1:30**, every level.
 - **Combat stance toggle** — Passive / Defensive / Neutral / Hostile.
 - **Summons show your name** in yellow.
 - **Picto progress** — kills / needed counter.
 
-Pull the latest modpack for the new mods.
+Sync to the latest modpack for the new mods.
+https://github.com/Rakambda/FallingTree/raw/minecraft/1.20.1/assets/demo.gif
 
-![[fallingtree.webp]] ![[toms-storage.webp]]
+![[Pasted image 20260624051728.png]]
