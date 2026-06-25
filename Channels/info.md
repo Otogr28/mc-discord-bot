@@ -29,6 +29,17 @@ https://otogr28.github.io/realm-gates/
 
 ---
 
+## ℹ️ General info
+
+📚 **All the modpack info and wiki is here!** → https://otogr28.github.io/realm-gates/
+
+- **Edition:** Minecraft Java — Forge 1.20.1
+- **Travel** between realms through the Gates. Some realms are far harsher than others, so gear up before you step through.
+- Read the **#rules** channel before you play.
+- Lost or stuck? Ask in chat — other travelers have been there.
+
+---
+
 <@&1515788221823324391>
 
 ## Meet Grandma
