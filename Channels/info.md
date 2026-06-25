@@ -31,15 +31,9 @@ https://otogr28.github.io/realm-gates/
 
 ## Meet Grandma
 
-Let me introduce you to **Grandma**.
+**Grandma** keeps the stall by the market square, and she hears everything.
 
-She keeps the little stall by the market square — a kind old face, a warm word for every traveler who wanders past. Don't let that fool you. **Grandma hears *everything*.** Nothing happens in these worlds that doesn't reach her ear first, and she has never once kept a secret to herself.
+Got a word about another traveler? Press **"I've got gossip"** and tell her. Truth sticks to their name; empty insults don't.
 
-So go and see her. When you've got something to say about another traveler — true or cruel — press **"I've got gossip"** and tell her. A believable word lands and sticks to their name; an empty insult barely stirs the air. Grandma remembers. Grandma *repeats*.
-
-And what you whisper to her does not stay in the market. **Every word changes the daily missions I set — theirs, and yours.** Reputation is currency in this place, and Grandma keeps the books.
-
-Be careful what you tell her. Be more careful what others are telling her about *you*.
-
-*(Want me to shape your days around who you really are? Type **`/mission describe`** and say so in your own words.)*
+What you whisper to her changes the daily missions I set — theirs, and yours.
 
