@@ -29,6 +29,8 @@ https://otogr28.github.io/realm-gates/
 
 ---
 
+<@&1515788221823324391>
+
 ## Meet Grandma
 
 **Grandma** keeps the stall by the market square, and she hears everything.
@@ -36,4 +38,6 @@ https://otogr28.github.io/realm-gates/
 Got a word about another traveler? Press **"I've got gossip"** and tell her. Truth sticks to their name; empty insults don't.
 
 What you whisper to her changes the daily missions I set — theirs, and yours.
+
+![[grandma.jpg]]
 
