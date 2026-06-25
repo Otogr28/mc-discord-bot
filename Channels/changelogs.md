@@ -44,7 +44,9 @@ https://github.com/Rakambda/FallingTree/raw/minecraft/1.20.1/assets/demo.gif
 - The trail: answer Flugel's call → read the book in the library beneath the Tree of Knowledge → hunt the two Sacred Beasts, the **Yeti** and the **Kraken**.
 - Rewards along the way: golden apples, XP, and copper coins.
 
-**Tougher bosses**
-- The **Yeti** and the **Kraken** hit harder and take far more to bring down. Come prepared, and bring friends. The corruption's shades are meaner now too.
+**Companions**
+- **The Spirit's wisp now floats above your head** and stays out of your way — attack, mine and place right through it. New toggle to hide the Envelop overlay.
+- **The Mage no longer shoots through walls** — it only locks onto enemies it can actually see.
+- **Mage assists count now** — a mob your Mage wounded feeds its picto progress even if something else lands the kill.
 
 Sync to the latest modpack for the new mod, then meet me at the Gates.
