@@ -24,3 +24,27 @@ Sync to the latest modpack for the new mods.
 https://github.com/Rakambda/FallingTree/raw/minecraft/1.20.1/assets/demo.gif
 
 ![[Pasted image 20260624051728.png]]
+
+---
+
+<@&1515788221823324391>
+**Changelog — June 25, 2026**
+
+**New mod**
+- **Lightman's Currency** — coins have come to the realms. You earn them from missions and quest rewards; they can't be crafted. Sync the modpack to get it.
+
+**Daily missions, reworked**
+- The dailies now actually know the modpack. Expect varied goals — hunt, gather, explore — built around modded mobs, items and dungeons.
+- Missions are tailored to **how you play**: what you've been up to shapes what you get.
+- They reward **coins** now.
+- **Grandma still listens.** Slip her some gossip and it colors the missions I hand out — yours and theirs.
+
+**Story: Chapter 1 — The Warning**
+- **Flugel has a new chapter.** Talk to him to begin *The Warning* and a fresh chain of primary quests.
+- The trail: answer Flugel's call → read the book in the library beneath the Tree of Knowledge → hunt the two Sacred Beasts, the **Yeti** and the **Kraken**.
+- Rewards along the way: golden apples, XP, and copper coins.
+
+**Tougher bosses**
+- The **Yeti** and the **Kraken** hit harder and take far more to bring down. Come prepared, and bring friends. The corruption's shades are meaner now too.
+
+Sync to the latest modpack for the new mod, then meet me at the Gates.
