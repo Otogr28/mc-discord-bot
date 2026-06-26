@@ -50,3 +50,19 @@ https://github.com/Rakambda/FallingTree/raw/minecraft/1.20.1/assets/demo.gif
 - **Mage assists count now** — a mob your Mage wounded feeds its picto progress even if something else lands the kill.
 
 Sync to the latest modpack for the new mod, then meet me at the Gates.
+
+---
+
+<@&1515788221823324391>
+**Changelog — June 26, 2026**
+
+**Currency moved house**
+- The coin under the hood has changed — I swapped **Lightman's Currency** out for the lighter **Coins JE**. Your mission and quest payouts still arrive as coins, and coins still can't be smelted from ore. Sync the pack and the old currency mod steps aside on its own.
+
+**Crafting**
+- **Observers without the Nether.** The observer now takes an **amethyst shard** where it used to ask for nether quartz, so you can wire up your redstone without a trip below.
+
+**Companions**
+- **Lumina names line up now.** A Lumina you learn wears the name of the Picto it came from, so what you unlock matches what you read.
+
+Sync to the latest modpack, then meet me at the Gates.
