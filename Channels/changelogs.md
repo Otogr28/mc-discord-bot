@@ -59,6 +59,10 @@ Sync to the latest modpack for the new mod, then meet me at the Gates.
 **The overworld bites back**
 - Hostile mobs out in the open world now hit **+70% harder** and carry **+50% more health**. The surface turned dangerous — gear up before you stray far, and give the night the respect it's earned.
 
+**New tools at the forge**
+- **Anvil Never Too Expensive** — the anvil will never slam the door with "Too Expensive!" again. Stack your enchants, repairs and renames as far as your levels can carry them.
+- **Enchantment Transfer** — pull the magic off any item and onto a book for a fair price in experience. Salvage the enchants before you retire the gear.
+
 **Currency moved house**
 - The coin under the hood has changed — I swapped **Lightman's Currency** out for the lighter **Coins JE**. Your mission and quest payouts still arrive as coins, and coins still can't be smelted from ore. Sync the pack and the old currency mod steps aside on its own.
 
