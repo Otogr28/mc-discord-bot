@@ -61,3 +61,15 @@ If you hit something that looks off, please report it in <#1518887443447808031>.
 I'll keep developing the server every night, during hours when no one's online, so expect changes and updates **daily**. The world will keep growing under your feet.
 
 Thanks for being here from the start. See you at the Gates.
+
+---
+
+<@&1515788221823324391>
+
+**Tonight, the first Sacred Beast falls.**
+
+The hour has come. This evening we hunt the first of the two Sacred Beasts and bring it down together — one realm, one blade, one stand. Bring your sharpest steel, call your companions, and round up anyone you'd trust at your back.
+
+🗡️ **When:** <t:1782514800:F> — <t:1782514800:R>
+
+Gather at the Gates before the hour. We hunt as one. See you there.
