@@ -56,6 +56,9 @@ Sync to the latest modpack for the new mod, then meet me at the Gates.
 <@&1515788221823324391>
 **Changelog — June 26, 2026**
 
+**The overworld bites back**
+- Hostile mobs out in the open world now hit **+70% harder** and carry **+50% more health**. The surface turned dangerous — gear up before you stray far, and give the night the respect it's earned.
+
 **Currency moved house**
 - The coin under the hood has changed — I swapped **Lightman's Currency** out for the lighter **Coins JE**. Your mission and quest payouts still arrive as coins, and coins still can't be smelted from ore. Sync the pack and the old currency mod steps aside on its own.
 
