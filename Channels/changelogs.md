@@ -73,3 +73,19 @@ Sync to the latest modpack for the new mod, then meet me at the Gates.
 - **Lumina names line up now.** A Lumina you learn wears the name of the Picto it came from, so what you unlock matches what you read.
 
 Sync to the latest modpack, then meet me at the Gates.
+
+---
+
+<@&1515788221823324391>
+**Changelog — June 27, 2026**
+
+**Claim your land**
+- **`/claim` has arrived.** Stake out your home and lock it down — inside a claim only you can break or place blocks, and not even creepers or TNT can blast their way in.
+- **The commands:** `/claim add <pos> <pos> [name]` outlines the ground you want (the whole column above and below is yours, so just trace the footprint) · `/claim here` tells you whose land you're standing on · `/claim list` shows your claims · `/claim remove <name>` releases one.
+- **The fine print:** up to **3 claims** each, **200×200** blocks per claim, and no overlapping someone else's ground. Your farms, pistons and redstone keep humming and your chests and doors stay open — a claim only stops outsiders from touching your blocks, and mobs still wander in as always.
+
+**Daily missions, back for everyone**
+- If your dailies had gone quiet, they're flowing again — some players just weren't getting them, and that's fixed. Everyone gets their three.
+- Each one now pays out in **copper coins**, every time.
+
+Sync to the latest modpack, then meet me at the Gates.
