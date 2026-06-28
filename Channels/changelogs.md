@@ -112,3 +112,17 @@ Sync to the latest modpack, then meet me at the Gates.
 - **The surface settled down.** A swarm that had been crowding the open world and dragging the server has been reined in, so overworld spawns are back to normal. (sorry)
 
 Sync to the latest modpack for the new mods, then meet me at the Gates.
+
+---
+
+<@&1515788221823324391>
+**Changelog — June 28, 2026**
+
+**Companions: a new face**
+- **Reshape a companion you already have.** A new appearance menu lets you change a companion's model with the same handsome grid and 3D preview you saw when you first summoned it. 
+- **New faces to wear.** A sweep of new looks joins the roster from Zelda!!
+
+**Daily missions**
+- **Every daily you finish now gives you a full xp level**, on top of your coins. The missions also read your gear and your deeds more closely, so the further along you are, the harder they'll push you.
+
+Sync to the latest modpack, then meet me at the Gates.
