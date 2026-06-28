@@ -89,3 +89,26 @@ Sync to the latest modpack, then meet me at the Gates.
 - Each one now pays out in **copper coins**, every time.
 
 Sync to the latest modpack, then meet me at the Gates.
+
+---
+
+<@&1515788221823324391>
+**Changelog — June 28, 2026**
+
+**Share your claim**
+- **`/claim trust` has arrived.** The land you locked down with `/claim` can now be opened to the people you trust — a trusted player builds inside your claim exactly like you do. Made for teams and shared bases.
+- **The commands:** `/claim trust <claim> <player>` lets someone in · `/claim untrust <claim> <player>` revokes it · `/claim trusted <claim>` lists who you've trusted. The player doesn't even have to be online — pass their exact name and they're in.
+- **The fine print:** up to **10 trusted players** per claim. Everyone else stays locked out, and explosions and wandering mobs behave the same as ever — trust only opens your blocks to the names you pick.
+
+**Companions**
+- **Drafts flow properly now, especially for Mages.** The Mage's tree is the deepest of the three, and the old unlock pace left it starved. Mages now earn a draft **every level** (Warriors every 3, Spirits every 5), and any companion that had fallen behind is paid back everything it was owed the instant it loads or you open its panel. Open up that Mage and watch the unlocks light up.
+
+**New mods**
+- **Harvest with Ease** — right-click a grown crop to harvest *and* replant it in one motion. No breaking the block, no planting by hand. Wheat, carrots, potatoes and the rest, gathered with a single click.
+- **Advanced Loot Info** — the mob-drops page works again. JEI now pulls real loot straight from the server, so you can finally look up what any mob drops, and what's hiding in structure chests, without leaving the menu.
+
+**Into the Corruption**
+- **Something new stalks the wasteland.** 
+- **The surface settled down.** A swarm that had been crowding the open world and dragging the server has been reined in, so overworld spawns are back to normal. (sorry)
+
+Sync to the latest modpack for the new mods, then meet me at the Gates.
