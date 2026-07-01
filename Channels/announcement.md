@@ -73,3 +73,15 @@ The hour has come. This evening we hunt the first of the two Sacred Beasts and b
 🗡️ **When:** <t:1782514800:F> — <t:1782514800:R>
 
 Gather at the Gates before the hour. We hunt as one. See you there.
+
+---
+
+<@&1515788221823324391>
+
+**The altar is ready.**
+
+The two Sacred Beasts have fallen, and their fall opened the road ahead. Since then I have not rested — the altar stands raised at last, its stones set and its offerings prepared. Everything is in place for the rite to come.
+
+This is a rite we perform **together**, and the hour belongs to you. So tell me: **what day suits you best?**
+
+Drop your day below, gather your companions, and once the count is in I'll set the hour. The altar has waited long enough. See you at the Gates.
