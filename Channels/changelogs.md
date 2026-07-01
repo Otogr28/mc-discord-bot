@@ -126,3 +126,18 @@ Sync to the latest modpack for the new mods, then meet me at the Gates.
 - **Every daily you finish now gives you a full xp level**, on top of your coins. The missions also read your gear and your deeds more closely, so the further along you are, the harder they'll push you.
 
 Sync to the latest modpack, then meet me at the Gates.
+
+---
+
+<@&1515788221823324391>
+**Changelog — July 1, 2026**
+
+
+**The Sacred Beasts have fallen**
+- The Yeti and the Kraken have both been brought low. Two beasts felled, and now the altar awaits.
+
+**Companions**
+- **The Mage's drafts open properly now.** If your Mage showed unlocks waiting yet the button did nothing, that's mended. Every draft you've earned is yours to spend, right up to your level.
+- **Spirits sit lighter on your screen.** The Spirit's aura was quietly draining framerates under shaders. Its particles are far gentler now, with a setting in the config to dim them further if the drag still bites.
+
+Sync to the latest modpack, then meet me at the Gates.
