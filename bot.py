@@ -7,8 +7,9 @@ consola, etc.) se añadirán después.
 Comandos:
   /estado    -> embed con el estado actual del server.
 
-Además, el bot actualiza su "presencia" (el texto bajo su nombre) cada
-STATUS_REFRESH_SECONDS para mostrar jugadores conectados de un vistazo.
+Además, el bot re-asserta su "presencia" (el texto bajo su nombre) cada
+STATUS_REFRESH_SECONDS: espejo del bot del plugin Permadeath ("Viendo
+¡Permadeath!"), que comparte este mismo token desde otra sesión gateway.
 """
 
 from __future__ import annotations
@@ -147,29 +148,17 @@ class MCBot(discord.Client):
 
     @tasks.loop(seconds=60)
     async def refresh_presence(self) -> None:
-        try:
-            status = await self.crafty.get_status()
-        except Exception as exc:  # noqa: BLE001 - presencia best-effort
-            log.warning("No pude leer estado para la presencia: %s", exc)
-            await self.change_presence(
-                status=discord.Status.idle,
-                activity=discord.Game(name="status unknown"),
-            )
-            return
-
-        if status.is_up:
-            await self.change_presence(
-                status=discord.Status.online,
-                activity=discord.Activity(
-                    type=discord.ActivityType.watching,
-                    name=f"{status.online}/{status.max_players} players",
-                ),
-            )
-        else:
-            await self.change_presence(
-                status=discord.Status.dnd,
-                activity=discord.Game(name="server offline"),
-            )
+        # El plugin Permadeath del server pd comparte este token desde su propia
+        # sesión JDA y setea "Viendo ¡Permadeath!". Asertamos la MISMA presencia
+        # (y la refrescamos en loop) para que Discord muestre siempre esa, sin
+        # alternar entre sesiones. El estado del server principal sigue en /status.
+        await self.change_presence(
+            status=discord.Status.online,
+            activity=discord.Activity(
+                type=discord.ActivityType.watching,
+                name="¡Permadeath!",
+            ),
+        )
 
     @refresh_presence.before_loop
     async def _before_presence(self) -> None:
