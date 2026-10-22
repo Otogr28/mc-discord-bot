@@ -8,6 +8,7 @@ CLAUDE.md
 
 # Estado del sync vault->Discord (IDs de canales/mensajes, generado en runtime)
 .sync-state.json
+.sync-state-*.json
 
 # Config local de Obsidian del vault (no es contenido de canales)
 Channels/.obsidian/
@@ -20,3 +21,7 @@ venv/
 *.egg-info/
 .mypy_cache/
 .ruff_cache/
+backup-overwrites-*.json
+backup-roles-*.json
+backup-channels-*.json
+backup-messages-*.json
